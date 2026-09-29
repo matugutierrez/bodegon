@@ -1135,6 +1135,21 @@ address {
   outline-offset: -1px;
 }
 
+#grupo-bebidas .fila-bebidas {
+  cursor: default;
+}
+
+#grupo-bebidas .fila-bebidas:hover {
+  padding-left: 0;
+  background: none;
+}
+
+#grupo-bebidas .fila-bebidas.destacado {
+  padding-left: 0;
+  background: none;
+  outline: none;
+}
+
 .menu-dia {
   margin-top: clamp(3rem, 7vw, 5rem);
   border: 1px solid var(--linea-fuerte);

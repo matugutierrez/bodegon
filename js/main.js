@@ -308,6 +308,7 @@
     }
     var filas = document.querySelectorAll(".plato, .fila-bebidas");
     [].forEach.call(filas, function (el) {
+      if (el.closest && el.closest("#grupo-bebidas")) return;
       el.setAttribute("tabindex", "0");
       el.setAttribute("role", "link");
       function consultar() {

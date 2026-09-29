@@ -218,16 +218,15 @@ address {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 200;
-  border-bottom: 1px solid var(--linea);
-  background: rgba(241, 235, 221, 0.9);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: box-shadow 0.4s var(--salida), background 0.4s var(--salida);
+  mix-blend-mode: difference;
+  color: #fff;
+  background: none;
+  border: 0;
 }
 
 .cabecera.fija {
-  background: rgba(241, 235, 221, 0.97);
-  box-shadow: 0 10px 30px -18px rgba(23, 21, 19, 0.45);
+  background: none;
+  box-shadow: none;
 }
 
 .cabecera .contenedor {
@@ -297,7 +296,7 @@ address {
 .cabecera .marca-cartel b,
 .cabecera .marca-cartel i,
 .cabecera .marca-cartel s {
-  color: #6B4A2F;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -307,7 +306,7 @@ address {
   font-size: 0.62rem;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: var(--tinta-suave);
+  color: #fff;
 }
 
 .cabecera-derecha {
@@ -322,7 +321,7 @@ address {
   font-size: 0.66rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--tinta-suave);
+  color: #fff;
 }
 
 .boton-menu {
@@ -334,6 +333,7 @@ address {
   font-size: 0.7rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .icono-menu {
